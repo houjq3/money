@@ -6,7 +6,7 @@ os:
   - osx
   - windows
 
-  go:
+go:
   - "1.x"
   - "1.11.x"
   - "1.12.x"
