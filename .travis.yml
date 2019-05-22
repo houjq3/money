@@ -12,4 +12,5 @@ go:
   - "1.12.x"
 
 script:
+  - go get ./...
   - go test -v

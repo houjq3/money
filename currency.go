@@ -9,13 +9,20 @@ import (
 type Currency string
 
 const (
-	CurrencyCny Currency = "CNY"
-	CurrencyUsd Currency = "USD"
+	CurrencyCny    Currency = "CNY"
+	CurrencyUsd    Currency = "USD"
+	CurrencyOthers Currency = "OTHERS"
 )
+
+var AllCurrency = []Currency{
+	CurrencyCny,
+	CurrencyUsd,
+	CurrencyOthers,
+}
 
 func (e Currency) IsValid() bool {
 	switch e {
-	case CurrencyCny, CurrencyUsd:
+	case CurrencyCny, CurrencyUsd, CurrencyOthers:
 		return true
 	}
 	return false

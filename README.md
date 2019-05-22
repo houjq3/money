@@ -4,8 +4,7 @@ simple decimal money
 
 ```go
 type Money struct {
-	Value    string   `bson:"value"`
-	Currency Currency `bson:"currency"`
-	money    decimal.Decimal
+	Value    bsond.Decimal128 `bson:"value"`
+	Currency string           `bson:"currency"`
 }
 ```
